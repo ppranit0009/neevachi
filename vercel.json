@@ -1,9 +1,13 @@
 {
-    "buildCommand": "cd frontend && npm install && npm run build",
-    "outputDirectory": "frontend/dist",
-    "functions": {
-        "api/**/*.js": {
-            "runtime": "nodejs18.x"
+    "experimentalServices": {
+        "frontend": {
+            "root": "frontend",
+            "routePrefix": "/",
+            "framework": "vite"
+        },
+        "api": {
+            "root": "api",
+            "routePrefix": "/_/api"
         }
     }
 }
