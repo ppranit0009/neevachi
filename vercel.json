@@ -1,15 +1,9 @@
 {
-    "experimentalServices": {
-        "frontend": {
-            "root": "frontend",
-            "routePrefix": "/",
-            "framework": "vite"
-        },
-        "api": {
-            "root": "api",
-            "routePrefix": "/_/api",
-            "runtime": "nodejs18.x",
-            "entrypoint": "server.js"
+    "buildCommand": "cd frontend && npm install && npm run build",
+    "outputDirectory": "frontend/dist",
+    "functions": {
+        "api/**/*.js": {
+            "runtime": "nodejs18.x"
         }
     }
 }
