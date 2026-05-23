@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -61,12 +62,15 @@ const faqs = [
 ];
 
 const Contact = () => {
+  const location = useLocation();
+  const serviceFromState = location.state?.service || "";
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     company: "",
-    service: "",
+    service: serviceFromState,
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
