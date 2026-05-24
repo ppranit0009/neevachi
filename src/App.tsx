@@ -18,11 +18,13 @@ import Contact from './pages/Contact';
 import Index from './pages/Index';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
+import ProjectDetailTemp from './pages/ProjectDetailTemp';
 import Projects from './pages/Projects';
 import Quotes from './pages/Quotes';
 import Register from './pages/Register';
 import Services from './pages/Services';
 import Shop from './pages/Shop';
+import Workflow from './pages/Workflow';
 
 const queryClient = new QueryClient();
 
@@ -56,7 +58,9 @@ const App: React.FC = () => {
                 <Route element={<Layout />}>
                   <Route path="/" element={<Index />} />
                   <Route path="/services" element={<Services />} />
+                  <Route path="/workflow" element={<Workflow />} />
                   <Route path="/projects" element={<Projects />} />
+                  <Route path="/projects/:projectId" element={<ProjectDetailTemp />} />
                   <Route path="/blogs" element={<Blogs />} />
                   <Route path="/quotes" element={<Quotes />} />
                   <Route path="/about" element={<About />} />

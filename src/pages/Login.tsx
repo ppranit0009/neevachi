@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FcGoogle } from 'react-icons/fc';
 
-import { ArrowRight, Eye, EyeOff, Facebook, Github, Lock, Mail } from 'lucide-react';
+import { ArrowRight, Eye, EyeOff, Facebook, Lock, Mail } from 'lucide-react';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -171,13 +171,15 @@ const Login = () => {
                   <span className="sr-only">Sign in with Google</span>
                 </button>
 
-                {/* GitHub Login */}
+                {/* X Login */}
                 <button
                   type="button"
                   className="w-full inline-flex justify-center py-2.5 px-4 border border-gray-300 rounded-lg shadow-sm bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150"
                 >
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">Sign in with GitHub</span>
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  <span className="sr-only">Sign in with X</span>
                 </button>
 
                 {/* Facebook Login */}
@@ -193,7 +195,7 @@ const Login = () => {
               {/* Labels for the buttons */}
               <div className="grid grid-cols-3 gap-3 text-center text-xs text-gray-500">
                 <span>Google</span>
-                <span>GitHub</span>
+                <span>X</span>
                 <span>Facebook</span>
               </div>
 

@@ -234,6 +234,41 @@ const ProjectDetail = () => {
                       </span>
                     ))}
                   </div>
+
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">How We Provide</h3>
+                  <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 mb-8">
+                    <p className="text-gray-700 mb-6">We follow a systematic approach to ensure every project is delivered on time and exceeds expectations. From concept to deployment, we work closely with our clients to bring their vision to reality.</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">1</div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">Planning</h4>
+                          <p className="text-sm text-gray-600">Detailed project planning and requirement analysis.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">2</div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">Design</h4>
+                          <p className="text-sm text-gray-600">Innovative design and prototyping phase.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">3</div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">Development</h4>
+                          <p className="text-sm text-gray-600">Agile development with regular updates.</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">4</div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 mb-1">Testing</h4>
+                          <p className="text-sm text-gray-600">Comprehensive testing and quality assurance.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="lg:pl-8">

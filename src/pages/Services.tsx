@@ -182,9 +182,9 @@ const Services = () => {
               
               <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
                 <Link 
-                  to="/contact"
+                  to="/workflow"
                   state={{ service: service.title }}
-                  className="group w-full inline-flex items-center justify-center px-5 py-2.5 border-2 border-blue-600 rounded-lg text-sm font-medium text-blue-600 hover:bg-blue-50 hover:border-blue-700 hover:text-blue-700 transition-all duration-300"
+                  className="group w-full inline-flex items-center justify-center px-5 py-2.5 border-2 border-blue-600 rounded-lg text-sm font-medium text-blue-600 bg-blue-600 text-white hover:bg-blue-700 hover:border-blue-700 transition-all duration-300 active:scale-95"
                 >
                   <span>Explore Service</span>
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

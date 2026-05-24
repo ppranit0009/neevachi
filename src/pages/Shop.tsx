@@ -322,7 +322,13 @@ const ProductCard = ({ product }: { product: Product }) => {
               </span>
             )}
           </div>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors">
+          <button 
+            className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors active:scale-95"
+            onClick={() => {
+              console.log('Added to cart:', product.name);
+              alert(`${product.name} added to cart!`);
+            }}
+          >
             <ShoppingCart className="w-5 h-5" />
           </button>
         </div>

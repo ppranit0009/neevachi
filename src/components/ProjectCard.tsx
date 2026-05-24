@@ -159,9 +159,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           </div>
           <div className="mt-4">
             <Button variant="outline" className="w-full group/btn" asChild>
-              <div>
+              <Link to={`/projects/${projectId}`}>
                 {renderButtonContent('View Details')}
-              </div>
+              </Link>
             </Button>
           </div>
         </div>
