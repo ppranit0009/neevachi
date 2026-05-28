@@ -62,7 +62,7 @@ const itemVariants = {
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-24 px-4 bg-gradient-subtle">
+    <section id="services" className="py-12 px-4 bg-gradient-subtle">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -124,36 +124,6 @@ export function ServicesSection() {
               <div className="absolute inset-0 rounded-xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Additional Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 text-center"
-        >
-          <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
-            Why Choose NeevachiTech?
-          </h3>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8">
-            With over 5 years of experience in the tech industry, we combine cutting-edge technology with innovative solutions to bring your ideas to life. Our team of experts is dedicated to delivering high-quality, scalable, and efficient solutions that drive your business forward.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            <div className="p-6 bg-gradient-card rounded-xl border border-border">
-              <h4 className="text-xl font-heading font-semibold text-foreground mb-2">Expertise</h4>
-              <p className="text-muted-foreground">Deep knowledge in robotics, IoT, and embedded systems.</p>
-            </div>
-            <div className="p-6 bg-gradient-card rounded-xl border border-border">
-              <h4 className="text-xl font-heading font-semibold text-foreground mb-2">Innovation</h4>
-              <p className="text-muted-foreground">Staying ahead with the latest technologies and trends.</p>
-            </div>
-            <div className="p-6 bg-gradient-card rounded-xl border border-border">
-              <h4 className="text-xl font-heading font-semibold text-foreground mb-2">Quality</h4>
-              <p className="text-muted-foreground">Rigorous testing and quality assurance for reliable products.</p>
-            </div>
-          </div>
         </motion.div>
       </div>
     </section>

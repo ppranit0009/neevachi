@@ -1,28 +1,42 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CircuitBoard, Box, FileText } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const quotations = [
   {
     icon: CircuitBoard,
     title: "PCB Quotation",
     description: "Get instant pricing for PCB manufacturing",
+    service: "PCB Design & Manufacturing",
   },
   {
     icon: Box,
     title: "3D Printing Quotation",
     description: "Rapid prototyping cost estimates",
+    service: "3D Printing Services",
   },
   {
     icon: FileText,
     title: "Project Quotation",
     description: "Full project development quotes",
+    service: "",
   },
 ];
 
 export function CTASection() {
+  const navigate = useNavigate();
+
+  const handleQuotationClick = (service: string) => {
+    if (service) {
+      navigate("/contact", { state: { service } });
+    } else {
+      navigate("/contact");
+    }
+  };
+
   return (
-    <section className="py-24 px-4 relative overflow-hidden text-gray-800">
+    <section className="py-12 px-4 relative overflow-hidden text-gray-800">
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
@@ -67,7 +81,8 @@ export function CTASection() {
             >
               <Button
                 variant="outline"
-                className="w-full h-auto p-6 flex flex-col items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:border-white/40 hover:shadow-lg transition-all duration-300"
+                className="w-full h-auto p-6 flex flex-col items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 hover:border-white/40 hover:shadow-lg transition-all duration-300 cursor-pointer"
+                onClick={() => handleQuotationClick(item.service)}
               >
                 <div
                   className="h-14 w-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-white mb-5 mx-auto shadow-lg"

@@ -43,7 +43,7 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-24 px-4">
+    <section id="projects" className="py-12 px-4">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

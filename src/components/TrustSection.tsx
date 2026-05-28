@@ -1,15 +1,15 @@
-import { Users, Package, Briefcase, Handshake } from 'lucide-react';
+import { Users, Briefcase, Handshake, LifeBuoy } from 'lucide-react';
 
 const stats = [
   { icon: Users, value: "5000+", label: "CUSTOMERS" },
-  { icon: Package, value: "200+", label: "SKU'S" },
-  { icon: Briefcase, value: "25+", label: "PROJECTS" },
-  { icon: Handshake, value: "50+", label: "B2B PARTNERS" },
+  { icon: Briefcase, value: "50+", label: "PROJECTS DELIVERED" },
+  { icon: Handshake, value: "35+", label: "happy clients" },
+  { icon: LifeBuoy, value: "24/7", label: "SUPPORT" },
 ];
 
 export function TrustSection() {
   return (
-    <section className="relative py-24 px-4 overflow-hidden">
+    <section className="relative py-12 px-4 overflow-hidden">
       {/* Background with fixed scrolling effect */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"

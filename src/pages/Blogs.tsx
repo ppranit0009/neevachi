@@ -103,15 +103,15 @@ export default function Blogs() {
 
   return (
     <div className="container mx-auto py-12 px-4">
-      <div className="flex justify-between items-center mb-8">
-        <div>
+      <div className="flex flex-col items-center mb-8">
+        <div className="text-center">
           <h1 className="text-4xl font-bold mb-2">Blog</h1>
           <p className="text-muted-foreground">Read our latest articles and share your thoughts</p>
         </div>
         <Button 
           onClick={() => setActiveTab("write")} 
           variant="outline"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 mt-4"
         >
           <Plus className="w-4 h-4" /> New Post
         </Button>

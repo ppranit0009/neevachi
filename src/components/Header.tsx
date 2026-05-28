@@ -136,7 +136,7 @@ export function Header() {
               <Zap className="w-5 h-5 text-blue-600" />
             </div>
             <span className="text-xl font-heading font-bold text-gray-700">
-              Neevachi<span className="text-blue-600">Tech</span>
+              Neevachi Solutions
             </span>
           </Link>
 

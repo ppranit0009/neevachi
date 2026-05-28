@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Address",
-    details: "info@neevachitech.com"
+    details: "info@neevachisolutions.com"
   },
   {
     icon: Clock,
@@ -110,7 +110,7 @@ const Contact = () => {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Get in Touch with Neevachi Tech
+              Get in Touch with Neevachi Solutions
             </h1>
             <p className="text-xl text-blue-100 mb-8">
               Transform your ideas into technological reality. Our expert team is ready to help you with innovative solutions.
@@ -318,7 +318,7 @@ const Contact = () => {
               {/* Why Choose Us */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Why Choose Neevachi Tech?</CardTitle>
+                  <CardTitle className="text-lg">Why Choose Neevachi Solutions?</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex items-start gap-3">
@@ -357,7 +357,7 @@ const Contact = () => {
                   </p>
                   <div className="space-y-2">
                     <p className="text-sm">
-                      <strong>Email:</strong> business@neevachitech.com
+                      <strong>Email:</strong> business@neevachisolutions.com
                     </p>
                     <p className="text-sm">
                       <strong>Phone:</strong> +91 98765 43211

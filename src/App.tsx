@@ -14,6 +14,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 import About from './pages/About';
 import AllProjects from './pages/AllProjects';
 import Blogs from './pages/Blogs';
+import CategoryPage from './pages/CategoryPage';
 import Contact from './pages/Contact';
 import Index from './pages/Index';
 import Login from './pages/Login';
@@ -67,6 +68,7 @@ const App: React.FC = () => {
                   <Route path="/about" element={<About />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/shop" element={<Shop />} />
+                  <Route path="/shop/category/:categoryId" element={<CategoryPage />} />
                   <Route path="/shop/product/:productId" element={<ProductDetail />} />
                   <Route path="/all-projects" element={<AllProjects />} />
                   

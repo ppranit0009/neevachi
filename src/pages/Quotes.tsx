@@ -186,8 +186,8 @@ export default function GetQuotes() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email us at</p>
-                    <a href="mailto:contact@neevachitech.com" className="font-medium hover:underline">
-                      contact@neevachitech.com
+                    <a href="mailto:contact@neevachisolutions.com" className="font-medium hover:underline">
+                      contact@neevachisolutions.com
                     </a>
                   </div>
                 </div>

@@ -54,7 +54,7 @@ const industries = [
 
 export function IndustriesSection() {
   return (
-    <section className="py-16 bg-gradient-subtle">
+    <section className="py-12 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

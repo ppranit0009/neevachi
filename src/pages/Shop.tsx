@@ -141,30 +141,26 @@ export default function Shop() {
         {/* Category Cards Section */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-6">Browse by Category</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
             {categories.map((category) => (
-              <div
+              <Link
                 key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`cursor-pointer rounded-lg overflow-hidden transition-all hover:shadow-lg ${
-                  selectedCategory === category.id
-                    ? 'ring-2 ring-blue-600 shadow-lg'
-                    : 'hover:shadow-md'
-                }`}
+                to={`/shop/category/${category.id}`}
+                className="cursor-pointer rounded-lg overflow-hidden transition-all hover:shadow-lg hover:scale-105"
               >
-                <div className="relative h-32">
+                <div className="relative h-48">
                   <img
                     src={category.image}
                     alt={category.name}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-3">
-                    <h3 className="text-white font-semibold text-sm truncate">{category.name}</h3>
-                    <p className="text-white/80 text-xs">{category.count} products</p>
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-white font-semibold text-base truncate">{category.name}</h3>
+                    <p className="text-white/80 text-sm">{category.count} products</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
