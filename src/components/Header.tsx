@@ -10,6 +10,7 @@ const navItems = [
   { name: 'Home', path: '/' },
   { name: 'Shop', path: '/shop' },
   { name: 'Services', path: '/services' },
+  { name: '3D Printing', path: '/printing-service' },
   { name: 'Projects', path: '/projects' },
   { name: 'Blogs', path: '/blogs' },
   { name: 'Get Quotes', path: '/quotes' },
@@ -147,7 +148,7 @@ export function Header() {
                 to={item.path}
                 className={({ isActive }) => 
                   cn(
-                    "px-4 py-2 text-sm font-medium relative group",
+                    "px-4 py-2 text-sm font-medium",
                     isActive 
                       ? "text-blue-600 font-semibold" 
                       : "text-gray-600 hover:text-blue-600"
@@ -157,10 +158,7 @@ export function Header() {
                   e.currentTarget.blur();
                 }}
               >
-                <span className="relative">
-                  {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                </span>
+                {item.name}
               </NavLink>
             ))}
             

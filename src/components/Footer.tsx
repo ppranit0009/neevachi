@@ -25,9 +25,7 @@ export function Footer() {
             <div className="text-blue-50 text-sm max-w-md mb-4">
               <p className="font-semibold text-white mb-2">Email:</p>
               <p>info@neevachi.in</p>
-            </div>
-            <div className="text-blue-50 text-sm max-w-md mb-4">
-              <p className="font-semibold text-white mb-2">Contact:</p>
+              <p className="font-semibold text-white mb-2 mt-4">Contact:</p>
               <p>+91 9922552891, +91 9403497065</p>
             </div>
             <div className="text-blue-50 text-sm max-w-md mb-4">
