@@ -82,7 +82,11 @@ const Services = () => {
   };
 
   const handleGetQuote = () => {
-    window.location.href = '/quotes';
+    if (selectedService?.title === '3D Printing') {
+      window.location.href = '/printing-service';
+    } else {
+      window.location.href = '/quotes';
+    }
     handleCloseModal();
   };
 
