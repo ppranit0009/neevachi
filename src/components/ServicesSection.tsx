@@ -83,8 +83,12 @@ export function ServicesSection({ clickable = true }: { clickable?: boolean }) {
   };
 
   const handleGetQuote = () => {
-    // Navigate to quotes page with pre-selected service
-    window.location.href = '/quotes';
+    // Navigate to quotes page with pre-selected service, or printing-service for 3D Printing
+    if (selectedService?.title === '3D Printing') {
+      window.location.href = '/printing-service';
+    } else {
+      window.location.href = '/quotes';
+    }
     handleCloseModal();
   };
 
