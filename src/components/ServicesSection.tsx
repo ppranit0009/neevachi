@@ -86,6 +86,8 @@ export function ServicesSection({ clickable = true }: { clickable?: boolean }) {
     // Navigate to quotes page with pre-selected service, or printing-service for 3D Printing
     if (selectedService?.title === '3D Printing') {
       window.location.href = '/printing-service';
+    } else if (selectedService?.title === 'PCB Design') {
+      window.location.href = '/pcb-quotation';
     } else {
       window.location.href = '/quotes';
     }
