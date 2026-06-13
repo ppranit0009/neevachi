@@ -99,10 +99,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 <p className="text-gray-600 mb-4">{project.description}</p>
               </div>
               <div className="mt-4">
-                <Button variant="outline" className="group/btn w-full" asChild>
-                  <div>
-                    {renderButtonContent('View Full Project')}
-                  </div>
+                <Button variant="outline" className="group/btn w-full">
+                  {renderButtonContent('View Full Project')}
                 </Button>
               </div>
             </div>
@@ -158,10 +156,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <p className="text-gray-600 mb-4 line-clamp-2">{project.description}</p>
           </div>
           <div className="mt-4">
-            <Button variant="outline" className="w-full group/btn" asChild>
-              <Link to={`/projects/${projectId}`}>
-                {renderButtonContent('View Details')}
-              </Link>
+            <Button variant="outline" className="w-full group/btn">
+              {renderButtonContent('View Details')}
             </Button>
           </div>
         </div>

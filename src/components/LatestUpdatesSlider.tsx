@@ -23,7 +23,32 @@ const LatestUpdatesSlider = () => {
       try {
         const API_URL = import.meta.env.VITE_API_URL || '/api';
         const response = await axios.get(`${API_URL}/slider-updates`);
-        setUpdates(response.data);
+        // Ensure response.data is an array
+        if (Array.isArray(response.data)) {
+          setUpdates(response.data);
+        } else {
+          console.warn('API response is not an array, using fallback data');
+          setUpdates([
+            {
+              image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop&q=80",
+              title: "Transforming Ideas into Technological Reality",
+              teamName: "Neevachi Solutions",
+              position: "Our Mission",
+              schoolName: "Neevachi Solutions",
+              category: "Company Vision",
+              icon: "Building"
+            },
+            {
+              image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop&q=80",
+              title: "IRC League 2025",
+              teamName: "The Strangers",
+              position: "First Runner Up",
+              schoolName: "Neevachi Solutions",
+              category: "Middle Level",
+              icon: "Trophy"
+            }
+          ]);
+        }
       } catch (error) {
         console.error('Error fetching slider updates:', error);
         // Fallback to hardcoded data if API fails
@@ -73,6 +98,18 @@ const LatestUpdatesSlider = () => {
     setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + updates.length) % updates.length);
   };
+
+  if (loading || updates.length === 0 || !updates[currentIndex]) {
+    return (
+      <div className="w-full bg-gradient-to-br from-[#0E3995] to-[#0E3995]">
+        <div className="w-full px-4 py-12">
+          <div className="flex items-center justify-center h-[450px]">
+            <div className="text-white text-xl">Loading updates...</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full bg-gradient-to-br from-[#0E3995] to-[#0E3995]">
